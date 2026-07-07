@@ -1,0 +1,4 @@
+.gocache/
+*.test
+/taskrunner
+/taskrunner.exe

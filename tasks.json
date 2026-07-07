@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": "print-hello",
+      "type": "print",
+      "params": { "message": "hello from taskrunner" },
+      "timeout": "2s",
+      "retries": 0
+    },
+    {
+      "id": "calc-small",
+      "type": "calc",
+      "params": { "value": 50000 },
+      "timeout": "1s",
+      "retries": 1
+    },
+    {
+      "id": "fake-success",
+      "type": "fake",
+      "params": { "behavior": "success", "delay": "50ms" },
+      "timeout": "500ms",
+      "retries": 0
+    },
+    {
+      "id": "fake-fail",
+      "type": "fake",
+      "params": { "behavior": "fail", "delay": "20ms" },
+      "timeout": "500ms",
+      "retries": 1
+    },
+    {
+      "id": "fake-timeout",
+      "type": "fake",
+      "params": { "behavior": "timeout", "delay": "0s" },
+      "timeout": "100ms",
+      "retries": 1
+    }
+  ]
+}
